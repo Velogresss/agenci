@@ -1,0 +1,22 @@
+.language {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.languageIcon {
+    width: 26px; 
+    height: 26px;
+    margin-right: 5px; 
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 32px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: white;
+}

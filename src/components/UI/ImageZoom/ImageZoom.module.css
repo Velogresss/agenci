@@ -1,0 +1,31 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.image-container.zoomed {
+    transform: scale(1.5); /* Збільшення картинки */
+    z-index: 100; /* Виведення на передній план */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 200;
+    max-width: 90%;
+    pointer-events: none;
+}

@@ -1,0 +1,28 @@
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: lightgray;
+    border-radius: 5px;
+  }
+  
+  .pagination .active {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+  }
+  

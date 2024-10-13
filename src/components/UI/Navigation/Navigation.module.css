@@ -1,0 +1,44 @@
+.navigation {
+  background-color: #0a2a47;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.rows{
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  margin: 35px 100px 35px 100px;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_links li {
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+}
+
+.nav_links li p {
+  color: white;
+  padding: 2px;
+  margin: 10px 2px;
+  text-decoration: none;
+}
+
+.nav_links li p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart {
+  cursor: pointer;
+}

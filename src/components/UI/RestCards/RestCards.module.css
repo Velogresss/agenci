@@ -1,0 +1,36 @@
+/* .rest_card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+}
+
+.image{
+    border-radius: 5%;
+    width: 100%;
+}
+
+.text{
+    font-weight: bold;
+} */
+
+.rest_card {
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .text {
+    font-family:  Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin-top: 8px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+  }
+  
