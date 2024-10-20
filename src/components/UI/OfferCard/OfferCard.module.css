@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   font-family: Calibri, 'Trebuchet MS', sans-serif;
-  margin: 24px;
   position: relative;
 }
 
@@ -18,28 +17,29 @@
   align-items: center;
   text-align: center;
   position: relative;
-  width: 65px;
-  height: 65px;
-  top: -7%;
+  width: 122px;
+  height: 122px;
+  top: -10%;
   right: -70%;
   background-color: #FCB50B;
-  color: #DD1818;
+  color: black;
   border-radius: 50%;
-  padding: 15px;
+  padding: 10px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 48px;
 }
 
 .title {
-  font-size: 40px;
-  margin-top: -35px;
-  margin-left: 15px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58.59px;
+  margin-top: -75px;
 }
 
 .description {
   font-size: 24px;
   color: #555;
-  margin-top: 16px;
+  margin-top: -16px;
   margin-bottom: 12px;
 }
 
@@ -58,4 +58,52 @@
   color: red;
   font-size: 55px;
   font-weight: bold;
+}
+
+@media (max-width: 360px) {
+  
+  .offer_card{
+    margin: 0;
+  }
+
+  .image {
+    width: 143px;
+    border-radius: 10px;
+  }
+  
+  .discount_circle {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    top: -10%;
+    right: -55%;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .title {
+    font-size: 18px;
+    margin-top: -35px;
+  }
+  
+  .description {
+    font-size: 13px;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+  
+  .price_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .old_price {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .new_price {
+    font-size: 30px;
+  }
 }

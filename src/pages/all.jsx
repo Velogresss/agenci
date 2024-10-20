@@ -5,20 +5,29 @@ import PaginationOfferCardComponent from '../components/UI/PaginationOfferCardCo
 import AboutUs from '../components/UI/AboutUsMainComponent/AboutUs'
 import classes from './all.module.css'
 import CardList from '../components/UI/PopularTourMain/CardList'
+import FlightSearch from '../components/UI/FlightSearch/FlightSearch'
+
+import Calenda from '../components/UI/Calendar/Calendar'
 
 function All() {
   return (
     <div className='App'>
-      <div>
+      <div className={classes.bannerImageWrapper}>
         <img className={classes.bannerImage} src={bannerImage} alt="" />
+        <div className={classes.FlightSearchWrapper}>
+          <FlightSearch/>
+        </div>
       </div>
-      <div>
-        <PaginationOfferCardComponent/>
-      </div>
+    <div className={classes.PaginationOfferCardComponentC}>
+      <PaginationOfferCardComponent/>
+    </div> 
       <CardList/>
-      <AboutUs/>
+      <div className={classes.AboutUsC}>
+        <AboutUs/> 
+      </div>
+      <Calenda/>
     </div>
-  );  
+  );                                  
 }
 
 export default All;

@@ -40,33 +40,33 @@ const ContactPage = () => {
       <div className={classes.contactForm}>
         <h2>{t('contactsPage.titleForm')}</h2>
         <form onSubmit={handleSubmit}>
+          <label>Ім’я</label>
           <input
             type="text"
             name="name"
-            // placeholder="Ім’я"
             value={formData.name}
             onChange={handleChange}
             required
           />
+          <label>Email</label>
           <input
             type="email"
             name="email"
-            // placeholder="Email"
             value={formData.email}
             onChange={handleChange}
             required
           />
+          <label>Тема</label>
           <input
             type="text"
             name="subject"
-            // placeholder="Тема"
             value={formData.subject}
             onChange={handleChange}
             required
           />
+          <label>Повідомлення</label>
           <textarea
             name="message"
-            // placeholder="Повідомлення"
             value={formData.message}
             onChange={handleChange}
             required

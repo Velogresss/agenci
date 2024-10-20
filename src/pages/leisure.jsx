@@ -7,8 +7,12 @@ import classes from './leisure.module.css'
 const CardList = () => {
     return (
         <div className={classes.wrapper}>
-            <ImageGallery/>
-            <PaginationRestCardsComponent/> 
+            <div className={classes.ImageGalleryCon}>
+                <ImageGallery/>
+            </div>
+            <div className={classes.PaginationRestCardsComponentCon}>
+                <PaginationRestCardsComponent/> 
+            </div>
         </div>
     );
 };

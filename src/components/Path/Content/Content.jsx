@@ -5,6 +5,12 @@ import Register from '../../../pages/register';
 import Login from '../../../pages/login'
 import Contacts from '../../../pages/contacts'
 import Leisure from '../../../pages/leisure'
+import AviaTrails from '../../../pages/AviaTrails'
+
+import Business from '../../../pages/flightPages/business'
+import Econom from '../../../pages/flightPages/econom'
+import Premium from '../../../pages/flightPages/premium'
+import First from '../../../pages/flightPages/first'
 
 const Content = ({ currentPath }) => {
   switch (currentPath) {
@@ -15,7 +21,7 @@ const Content = ({ currentPath }) => {
     case '/contacts':
       return <Contacts/>;
     case '/flights':
-      return <div>Авіарейси</div>;
+      return <AviaTrails/>;
     case '/leisure':
       return <Leisure/>;
     case '/airport-taxi':
@@ -28,6 +34,29 @@ const Content = ({ currentPath }) => {
       return <Login/>;
     case '/register':
       return <Register />;
+    case '/cart':
+      // return <Cart />;
+
+    // case '/business':
+    //   return <Business />;
+    // case '/econom':
+    //   return <Econom />;
+    // case '/premium':
+    //   return <Premium />;
+    // case '/first':
+    //   return <First />;
+      
+    case '/flights/business':
+      return <Business />;
+    case '/flights/econom':
+      return <Econom />;
+    case '/flights/premium':
+      return <Premium />;
+    case '/flights/first':
+      return <First />;
+
+    case '/all':
+      return <All />;
     default:
       return <All />;
   }

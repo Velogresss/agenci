@@ -90,6 +90,7 @@ const PaginationComponent = ({ data, itemsPerPage }) => {
 
   return (
     <div>
+      <h1>Обирай місце для відпочинку</h1>
       <div className={classes.grid}>
         {currentItems.map((item, index) => (
           <RestCard key={index} url={item.url} alt={item.alt} text={item.text} />
@@ -105,7 +106,7 @@ const PaginationComponent = ({ data, itemsPerPage }) => {
             onClick={() => handleClick(page)}
             className={page === currentPage ? classes.active : ''}
           >
-            {page}
+            {page}                          
           </button>
         ))}
         <button onClick={() => handleClick(currentPage + 1)} disabled={currentPage === totalPages}>

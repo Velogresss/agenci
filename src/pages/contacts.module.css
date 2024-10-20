@@ -25,7 +25,12 @@
 .contactForm {
   width: 45%;
   font-weight: 700;
+}
+
+.contactForm label{
+  font-family: Calibri;
   font-size: 36px;
+  line-height: 43.95px;
 }
 
 .contactForm form {
@@ -55,4 +60,59 @@
 
 .contactForm button:hover {
   background-color: #ddb347;
+}
+
+@media (max-width: 360px) {
+  
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+  font-size: 14px;
+}
+
+.contactForm {
+  font-weight: 700;
+}  
+
+.contactForm label,
+.contactForm input,
+.contactForm textarea{
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contactForm input,
+.contactForm textarea {
+  margin: 0;
+  padding: 15px 5px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.contactForm button {
+  font-size: 16px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.contactInfo {
+  width: 100%;
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.contactContainer{
+  flex-direction: column;
+}
+
+.contactForm label{
+  font-family: Calibri;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.97px; 
+}
+
 }

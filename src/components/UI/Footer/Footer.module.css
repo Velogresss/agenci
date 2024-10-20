@@ -51,8 +51,12 @@
 }
 
 .paymentIcons img {
-  width: 50px;
+  height: 30px;
   margin-right: 15px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 .socialIcons {
@@ -61,39 +65,51 @@
 }
 
 .socialIcons a {
+  width: 55px;
+  height: 55px;
   margin-right: 15px;
+  background-color: white;
+  border-radius: 50%;
 }
 
-.socialIcons img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.img1,.img2 {
+  width: 55px;
+  height: 55px;
+}
+
+.img3 {
+  width: 30px;
+  height: 38px;
+  margin: 50%;
+  transform: translateX(-50%)  translateY(-50%);
 }
 
 .footer .section:last-child {
   margin-right: 0;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 360px) {
   .footer {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column;  
+    padding: 40px;
   }
 
-  .section {
-    margin-bottom: 20px;
-    margin-right: 0;
+  .section h3 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .section ul li {
+    margin-bottom: 10px;
+    font-size: 13px;
   }
 
   .paymentSection {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
-  .paymentIcons {
-    justify-content: center;
+  .paymentIcons img {
+    height: 20px;
   }
-
-  .socialIcons {
-    justify-content: center;
-  }
-} */
+}

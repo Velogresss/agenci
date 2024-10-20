@@ -13,17 +13,17 @@ function AboutUs() {
                 <h1 className={classes.aboutUsH1}>{t('aboutUs.title')}</h1>
             </div>
             <div className={classes.AboutUsContainerForAll}>
-            <div className={classes.imageSection}>
-                <img 
-                    src={ImageAbout}
-                    alt={t('aboutUs.title')}
-                    className={classes.aboutUsImage}
-                />
-            </div>
-            <div className={classes.textSection}>
-                <p className={classes.textSectionP}>{t('aboutUs.description')}</p>
-                <button className={classes.learnMoreButton}>{t('aboutUs.button')}</button>
-            </div>
+                <div className={classes.imageSection}>
+                    <img 
+                        src={ImageAbout}
+                        alt={t('aboutUs.title')}
+                        className={classes.aboutUsImage}
+                    />
+                </div>
+                <div className={classes.textSection}>
+                    <p className={classes.textSectionP}>{t('aboutUs.description')}</p>
+                    <button className={classes.learnMoreButton}>{t('aboutUs.button')}</button>
+                </div>
             </div>
         </div>
     );

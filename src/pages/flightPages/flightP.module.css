@@ -1,0 +1,54 @@
+.allContainer{
+    padding: 0 168px 100px 168px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+}
+
+.allContainer h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78.13px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 75px 0;
+}
+
+.mainImg{
+    width: 659px;
+    height: 407px;
+    border-radius: 13px;
+}
+
+.mainText{
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 0 0 50px;
+}
+
+.mainContainer{
+    box-sizing: border-box;
+    height: 407px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContainer p{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.3px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.arrow{
+    position: absolute;
+    width: 86px;
+    height: auto;
+    top: 3%;
+    left: 2%;
+    cursor: pointer;
+}

@@ -30,11 +30,11 @@ function About() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className={classes.container_pin_img}>
           <img 
             src={ImageAbout1}
             alt="Pin on map"
-            className={classes.img}
+            className={classes.pin_img}
           />
         </div>
       </div>

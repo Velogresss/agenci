@@ -1,0 +1,47 @@
+.wrapper{
+    box-sizing: border-box;
+    width: 1410px;
+    height: 200px;
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 13px;
+    border: 1px solid black;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.inputBox{
+  height: 75px;
+  border-radius: 13px;
+  font-size: 36px;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input {
+    width: 25%;
+    border: 1px solid #ccc;
+    color: #6C6C6C;
+  }
+  
+  .buttonContainer{
+    display: flex;
+    justify-content: end;
+  }
+
+  .button {
+    margin: 0;
+    width: 329px;
+    background-color: #f1c40f;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #e1b50c;
+  }

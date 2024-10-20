@@ -3,3 +3,35 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
+
+.bannerImage{
+    width: 100%;
+}
+
+.bannerImageWrapper{
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.FlightSearchWrapper{
+    position: absolute;
+    z-index: 2;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.PaginationOfferCardComponentC{
+    margin: 20px 100px;
+}
+
+.AboutUsC{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 360px)
+{
+    .bannerImage{
+        height: 266px;
+    }
+}

@@ -1,8 +1,9 @@
 .navigation {
+  width: 100%;
   background-color: #0a2a47;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .rows{
@@ -12,6 +13,11 @@
 
 .logo {
   margin: 35px 100px 35px 100px;
+}
+
+.logoImage{
+  width: 125px;
+  cursor: pointer;
 }
 
 .nav_links {
@@ -39,6 +45,116 @@
   cursor: pointer;
 }
 
+.actionsIC{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .cart {
   cursor: pointer;
+  height: 23px;
+  width: 32px;
+  margin-right: 100px;
+}
+
+.hamburger {
+  width: 100%;
+  display: none;
+  color: white;
+  width: 36px;
+  height: 20px;
+}
+
+.active {
+  font-weight: bold; 
+}
+
+.LanguageSwitcherCon{
+  margin-right: 100px;
+}
+
+@media (max-width: 1280px) {
+  .logoImage{
+    width: 100px;
+  }
+
+  .nav_links li {
+    font-size: 20px;
+  }
+
+  .cart {
+    height: 20px;
+    width: 29px;
+    margin-right: 25px;
+  }
+
+  .LanguageSwitcherCon{
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .logo{
+    margin: 9px 27px;
+    box-sizing: content-box;
+  }
+
+  .logoImage{
+    width: 50px;
+  }
+
+  .rows_box {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #0a2a47;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .menu_open {
+    display: block;
+  }
+
+  .menu_dropdown {
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    background-color: #0a2a47;
+    width: 50%;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .menu_dropdown ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .hamburger {
+    margin-right: 50px;
+    display: block;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav_links li {
+    font-size: 20px;
+  }
+
+  .cart{
+    display: none;
+  }
 }

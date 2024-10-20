@@ -1,7 +1,7 @@
 .aboutUsContainer {
     display: flex;
-    font-family: Arial, sans-serif;
     flex-direction: column;
+    font-family: Calibri;
 }
 
 .AboutUsContainerForAll{
@@ -12,12 +12,13 @@
 }
 
 .imageSection {
-    width: 100%;
-    margin-left: -100px;
+    width: 871px;
+    height: 853px;
+    margin-left: -5px;
 }
 
 .aboutUsImage {
-    border-radius: 10px;
+    border-radius: 13px;
 }
 
 .textSection {
@@ -26,11 +27,12 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 30px;
+    margin: 50px;
 }
 
 .aboutUsH1Container{
-    margin: 25px 50px;
+    margin-left: 113px;
+    text-align: left;
 }
 
 .aboutUsH1 {
@@ -40,22 +42,88 @@
 
 .textSectionP {
     font-size: 32px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 39.06px;
+    text-align: left;    
     flex-wrap: wrap;
 }
 
 .learnMoreButton {
+    box-sizing: border-box;
+    width: 440px;
+    height: 75px;
     background-color: #ffcc00;
     color: black;
     border: none;
     margin-top: 50px;
-    padding: 15px 30px;
-    font-size: 18px;
+    font-size: 32px;
     border-radius: 15px;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 
 .learnMoreButton:hover {
     background-color: #e6b800;
+}
+
+@media (max-width: 360px) {
+
+    .aboutUsH1Container{
+        margin-bottom: 10px;
+    }
+
+    .aboutUsContainer {
+        margin-bottom: 15px;
+    }
+
+    .AboutUsContainerForAll{
+        flex-direction: column-reverse;
+    }
+
+    .imageSection {
+        margin: 0 36px;
+        width: 292px;
+        height: 194px;
+    }
+
+    .imageSection img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .textSection {
+        text-align: justify;
+        margin: 0 0 10px 0;
+    }
+    
+    .aboutUsH1Container{
+        margin: 0 115px;
+    }
+    
+    .aboutUsH1 {
+        font-size: 30px;
+        margin: 0;
+    }
+    
+    .textSectionP {
+        font-size: 13px;
+        line-height: 1.3;
+        margin: 0 36px 25px 36px;
+        flex-wrap: wrap;
+    }
+    
+    .learnMoreButton {
+        box-sizing: border-box;
+        width: 200px;
+        height: 36px;
+        background-color: #ffcc00;
+        color: black;
+        margin-top: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .learnMoreButton:hover {
+        background-color: #e6b800;
+    }
 }

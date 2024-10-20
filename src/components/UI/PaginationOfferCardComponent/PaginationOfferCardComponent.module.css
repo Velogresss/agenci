@@ -1,18 +1,22 @@
 h1{
-  margin: 10px 20px;
+  margin: 50px 20px;
+  font-family: Calibri;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.13px;
+  text-align: left;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 36px;
 }
   
 .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
   
 .pagination button {
@@ -30,3 +34,17 @@ h1{
   background-color: blue;
 }
   
+@media (max-width: 360px) {
+
+  h1{
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+}

@@ -15,15 +15,13 @@
 } */
 
 .rest_card {
-    padding: 16px;
-    margin: 16px;
     text-align: center;
   }
   
   .image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
   .text {
@@ -31,6 +29,16 @@
     margin-top: 8px;
     font-size: 36px;
     font-weight: 700;
-    color: #333;
+    line-height: 43.95px;
+    text-align: center;
+    color: #1B1404;
   }
-  
+
+  @media (max-width: 360px) {
+    .text {
+      font-size: 18px;
+      line-height: 21.97px;
+      color: #1B1404;
+    }
+
+  }

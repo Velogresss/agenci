@@ -1,7 +1,7 @@
 .language {
+    justify-content: center;
     display: flex;
     align-items: center;
-    margin-right: 100px;
 }
 
 .languageIcon {
@@ -12,11 +12,32 @@
 
 select {
     padding: 5px;
-    font-size: 16px;
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
     font-size: 32px;
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     color: white;
+    background-color: #072849;
+}
+
+@media (max-width: 360px) {
+
+.languageIcon {
+    width: 15px; 
+    height: 15px;
+    margin-right: 5px; 
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #072849;
+}
+
 }
