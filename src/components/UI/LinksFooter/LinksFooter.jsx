@@ -5,20 +5,22 @@ import imgGoogle from '../../../img/footer/imageGoogle.png';
 import imgFacebook from '../../../img/footer/imageFacebook.png';
 import imgApple from '../../../img/footer/imageApple.png';
 
-const Footer = ({ onNavigate }) => {
+import AuthGoogle from '../../API/AuthGoolge/AuthGoogle'
+
+const LinksFooter = () => {
   return (
     <div className={classes.socialIcons}>
-      <a href="https://www.facebook.com">
+      <div className={classes.a}>
         <img className={classes.img1} src={imgFacebook} alt="Facebook" />
-      </a>
-      <a href="https://www.google.com">
-        <img className={classes.img2} src={imgGoogle} alt="Google" />
-      </a>
-      <a href="https://www.Apple.com">
+      </div>
+      <div className={classes.a}>    
+        <AuthGoogle connection={"http://localhost:5083"}/>
+      </div>
+      <div className={classes.a}>
         <img className={classes.img3} src={imgApple} alt="Apple" />
-      </a>
+      </div>
     </div>
   );
 };
 
-export default Footer;
+export default LinksFooter;
