@@ -28,7 +28,7 @@
   transition: opacity 1s ease;
 }
 
-.card.hovered .content {
+.card.hovered .content:hover {
   opacity: 1;
 }
 
@@ -37,6 +37,11 @@
   grid-column: span 2; 
   height: auto; 
   z-index: 10; 
+}
+
+.card.selected:nth-child(4), .card.selected:nth-child(5)
+{
+  order: -1;
 }
 
 .card.selected .content {

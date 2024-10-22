@@ -10,18 +10,18 @@ import imgGoogle from '../../../img/footer/imageGoogle.png';
 import imgFacebook from '../../../img/footer/imageFacebook.png';
 import imgApple from '../../../img/footer/imageApple.png';
 
-const Footer = ({ onNavigate }) => {
+const Footer = ({ navigate }) => {
   return (
     <footer className={classes.footer}>
       <div className={classes.section}>
         <h3>Про нас</h3>
         <ul>
-          <li onClick={() => onNavigate('/contacts')}>Контакти</li>
-          <li onClick={() => onNavigate('/flights')}>Авіарейси</li>
-          <li onClick={() => onNavigate('/about')}>Про нас</li>
-          <li onClick={() => onNavigate('/accommodation')}>Помешкання</li>
-          <li onClick={() => onNavigate('/leisure')}>Дозвілля</li>
-          <li onClick={() => onNavigate('/airport-taxi')}>Таксі з/до аеропорту</li>
+          <li onClick={() => navigate('/contacts')}>Контакти</li>
+          <li onClick={() => navigate('/flights')}>Авіарейси</li>
+          <li onClick={() => navigate('/about')}>Про нас</li>
+          <li onClick={() => navigate('/accommodation')}>Помешкання</li>
+          <li onClick={() => navigate('/leisure')}>Дозвілля</li>
+          <li onClick={() => navigate('/airport-taxi')}>Таксі з/до аеропорту</li>
         </ul>
       </div>
 
@@ -45,8 +45,8 @@ const Footer = ({ onNavigate }) => {
       <div className={classes.section}>
         <h3>Підтримка</h3>
         <ul>
-          <li onClick={() => onNavigate('/support')}>Служба підтримки клієнтів</li>
-          <li onClick={() => onNavigate('/guarantee')}>Гарантія обслуговування</li>
+          <li onClick={() => navigate('/support')}>Служба підтримки клієнтів</li>
+          <li onClick={() => navigate('/guarantee')}>Гарантія обслуговування</li>
         </ul>
         <LinksFooter/>
       </div>

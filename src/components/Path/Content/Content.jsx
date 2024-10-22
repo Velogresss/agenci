@@ -36,15 +36,6 @@ const Content = ({ currentPath }) => {
       return <Register />;
     case '/cart':
       // return <Cart />;
-
-    // case '/business':
-    //   return <Business />;
-    // case '/econom':
-    //   return <Econom />;
-    // case '/premium':
-    //   return <Premium />;
-    // case '/first':
-    //   return <First />;
       
     case '/flights/business':
       return <Business />;

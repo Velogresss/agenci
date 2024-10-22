@@ -17,7 +17,7 @@ import AppClasses from './App.module.css';
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  const [currentPath, setCurrentPath] = useState(window.location.pathname + '/all');
   const { isMenuOpen, closeMenu } = useContext(MenuContext);
   
   const handleNavigate = (path) => {
@@ -43,7 +43,7 @@ const App = () => {
       <div className={isMenuOpen ? AppClasses.blurred : ''} onClick={closeMenu}>
         <Content currentPath={currentPath} />
       </div>
-      <Footer onNavigate={handleNavigate} />
+      <Footer navigate={handleNavigate} />
     </AuthProvider>
   );
 }

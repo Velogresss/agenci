@@ -7,7 +7,6 @@ import classes from './all.module.css'
 import CardList from '../components/UI/PopularTourMain/CardList'
 import FlightSearch from '../components/UI/FlightSearch/FlightSearch'
 
-import Calenda from '../components/UI/Calendar/Calendar'
 
 function All() {
   return (
@@ -25,7 +24,6 @@ function All() {
       <div className={classes.AboutUsC}>
         <AboutUs/> 
       </div>
-      <Calenda/>
     </div>
   );                                  
 }
