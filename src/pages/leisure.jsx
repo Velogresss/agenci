@@ -4,7 +4,7 @@ import ImageGallery from '../components/UI/ImageGalleryLeisure/ImageGalleryLeisu
 
 import classes from './leisure.module.css'
 
-const CardList = () => {
+const Leisure = () => {
     return (
         <div className={classes.wrapper}>
             <div className={classes.ImageGalleryCon}>
@@ -17,4 +17,4 @@ const CardList = () => {
     );
 };
   
-export default CardList;
+export default Leisure;

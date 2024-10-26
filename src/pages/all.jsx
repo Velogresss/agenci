@@ -5,8 +5,8 @@ import PaginationOfferCardComponent from '../components/UI/PaginationOfferCardCo
 import AboutUs from '../components/UI/AboutUsMainComponent/AboutUs'
 import classes from './all.module.css'
 import CardList from '../components/UI/PopularTourMain/CardList'
-import FlightSearch from '../components/UI/FlightSearch/FlightSearch'
 
+import FlightSearch from '../components/UI/FlightSearch/FlightSearch'
 
 function All() {
   return (
@@ -20,7 +20,9 @@ function All() {
     <div className={classes.PaginationOfferCardComponentC}>
       <PaginationOfferCardComponent/>
     </div> 
+    <div className={classes.CardListCont}>
       <CardList/>
+    </div> 
       <div className={classes.AboutUsC}>
         <AboutUs/> 
       </div>

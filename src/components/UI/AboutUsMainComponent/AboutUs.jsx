@@ -1,8 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import classes from './AboutUs.module.css';
-import ImageAbout from '../../../img/ImageForAboutMainComponent.png'
+import ImageAbout from '../../../img/ImageForAboutMainComponent.png';
+import ImageAbout1024 from '../../../img/ImageForAboutMainComponent1024.png';
 
+import { Link } from 'react-router-dom';
 
 function AboutUs() {
     const { t } = useTranslation();
@@ -14,15 +16,20 @@ function AboutUs() {
             </div>
             <div className={classes.AboutUsContainerForAll}>
                 <div className={classes.imageSection}>
-                    <img 
-                        src={ImageAbout}
-                        alt={t('aboutUs.title')}
-                        className={classes.aboutUsImage}
-                    />
+                    <picture>
+                        <source srcSet={ImageAbout} media="(min-width: 1901px)" />
+                        <source srcSet={ImageAbout1024} media="(max-width: 900px) and (max-width: 1900px)" />
+                        <source srcSet={ImageAbout} media="(max-width: 360px)" />
+                        <img src={ImageAbout1024} alt={t('aboutUs.title')} className={classes.aboutUsImage} />
+                    </picture>
                 </div>
                 <div className={classes.textSection}>
                     <p className={classes.textSectionP}>{t('aboutUs.description')}</p>
-                    <button className={classes.learnMoreButton}>{t('aboutUs.button')}</button>
+                    <Link to='/about'>
+                        <button className={classes.learnMoreButton}>
+                            {t('aboutUs.button')}
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -2,19 +2,17 @@
     display: flex;
     flex-direction: column;
     font-family: Calibri;
+    margin-bottom: 15px;
 }
 
-.AboutUsContainerForAll{
+.AboutUsContainerForAll {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 .imageSection {
-    width: 871px;
-    height: 853px;
-    margin-left: -5px;
+    margin-left: -15px;
 }
 
 .aboutUsImage {
@@ -22,62 +20,95 @@
 }
 
 .textSection {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    margin: 50px;
-}
-
-.aboutUsH1Container{
-    margin-left: 113px;
     text-align: left;
+    margin: 0 50px;
 }
 
 .aboutUsH1 {
     font-size: 64px;
-    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 78.13px;
+    margin-left: 75px;
 }
 
 .textSectionP {
     font-size: 32px;
     font-weight: 400;
     line-height: 39.06px;
-    text-align: left;    
     flex-wrap: wrap;
 }
 
 .learnMoreButton {
     box-sizing: border-box;
-    width: 440px;
-    height: 75px;
     background-color: #ffcc00;
     color: black;
     border: none;
-    margin-top: 50px;
-    font-size: 32px;
-    border-radius: 15px;
     cursor: pointer;
     transition: 0.5s ease;
+    width: 444px;
+    height: 75px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.06px;
+    text-align: center;
+    border-radius: 13px;
 }
 
 .learnMoreButton:hover {
     background-color: #e6b800;
 }
 
-@media (max-width: 360px) {
-
-    .aboutUsH1Container{
-        margin-bottom: 10px;
+@media (min-width: 901px) and (max-width: 1900px) {
+    .AboutUsContainerForAll {
+        flex-direction: column;
     }
 
-    .aboutUsContainer {
-        margin-bottom: 15px;
+    .imageSection {
+        width: 800px;
+        height: 380px;
     }
 
-    .AboutUsContainerForAll{
-        flex-direction: column-reverse;
+    .imageSection img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        object-fit: fill;
+    }
+
+    .textSection {
+        margin: 0 0 10px 0;
+    }
+    
+    .aboutUsH1 {
+        text-align: center;
+        font-size: 64px;
+        line-height: 78.13px;
+        margin: 0;
+    }
+    
+    .textSectionP {
+        font-size: 24px;
+        line-height: 29.3px;
+        margin: 75px 110px;
+    }
+    
+    .learnMoreButton {
+        width: 800px;
+        height: 60px;
+        font-size: 24px;
+        line-height: 29.3px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .AboutUsContainerForAll {
+        flex-direction: column;
     }
 
     .imageSection {
@@ -86,44 +117,28 @@
         height: 194px;
     }
 
-    .imageSection img{
+    .imageSection img {
         width: 100%;
         height: 100%;
+        border-radius: 5px;
     }
 
-    .textSection {
-        text-align: justify;
-        margin: 0 0 10px 0;
-    }
-    
-    .aboutUsH1Container{
-        margin: 0 115px;
-    }
-    
     .aboutUsH1 {
+        text-align: center;
         font-size: 30px;
         margin: 0;
     }
-    
+
     .textSectionP {
         font-size: 13px;
         line-height: 1.3;
         margin: 0 36px 25px 36px;
-        flex-wrap: wrap;
     }
-    
+
     .learnMoreButton {
-        box-sizing: border-box;
         width: 200px;
         height: 36px;
-        background-color: #ffcc00;
-        color: black;
-        margin-top: 0;
         font-size: 16px;
-        text-align: center;
-    }
-    
-    .learnMoreButton:hover {
-        background-color: #e6b800;
+        margin-bottom: 20px;
     }
 }

@@ -1,5 +1,3 @@
-// src/ContactPage.js
-
 import React, { useState } from 'react';
 import classes from './contacts.module.css'; 
 import imgMap from '../img/Contacts/map.png'

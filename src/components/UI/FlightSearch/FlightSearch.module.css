@@ -1,47 +1,90 @@
 .wrapper{
-    box-sizing: border-box;
-    width: 1410px;
-    height: 200px;
-    padding: 10px 30px;
-    background-color: white;
-    border-radius: 13px;
-    border: 1px solid black;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+  width: 1410px;
+  height: 200px;
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 13px;
+  border: 1px solid black;
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 .inputBox{
-  height: 75px;
-  border-radius: 13px;
-  font-size: 36px;
-  box-sizing: border-box;
-  margin: 10px 0;
+height: 75px;
+border-radius: 13px;
+font-size: 36px;
+box-sizing: border-box;
+margin: 10px 0;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input {
+  text-align: center;
+  width: 444px;
+  border: 1px solid #ccc;
+  color: #6C6C6C;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: end;
+}
+
+.button {
+  margin: 0;
+  width: 444px;
+  background-color: #f1c40f;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #e1b50c;
+}
+
+@media (min-width: 800px) and (max-width: 1900px) {
+    .wrapper{
+      width: 788px;
+      height: 330px;
+    }
   
-  .input {
-    width: 25%;
-    border: 1px solid #ccc;
-    color: #6C6C6C;
-  }
+    .inputBox{
+      width: 677px;
+      height: 54px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24.41px;
+    }
   
-  .buttonContainer{
-    display: flex;
-    justify-content: end;
+    .container{
+      flex-direction: column;
+    }
+
+    .buttonContainer{
+      justify-content: center;
+    }
   }
 
-  .button {
-    margin: 0;
-    width: 329px;
-    background-color: #f1c40f;
-    border: none;
-    cursor: pointer;
+@media (max-width: 800px) {
+  .wrapper{
+    width: 228px;
+    height: 270px;
   }
-  
-  .button:hover {
-    background-color: #e1b50c;
+
+  .inputBox{
+    width: 196px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.53px;
   }
+
+  .container{
+    flex-direction: column;
+  }
+}

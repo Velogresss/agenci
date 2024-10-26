@@ -14,7 +14,7 @@
     font-weight: bold;
 } */
 
-.rest_card {
+.restCard {
     text-align: center;
   }
   
@@ -35,10 +35,14 @@
   }
 
   @media (max-width: 360px) {
+    .restCard{
+      width: 138px;
+      height: 138px;
+    }
+
     .text {
       font-size: 18px;
       line-height: 21.97px;
       color: #1B1404;
     }
-
   }

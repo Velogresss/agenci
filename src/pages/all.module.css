@@ -6,6 +6,7 @@ body{
 
 .bannerImage{
     width: 100%;
+    height: auto;
 }
 
 .bannerImageWrapper{
@@ -29,9 +30,54 @@ body{
     margin-bottom: 50px;
 }
 
-@media (max-width: 360px)
-{
+.CardListCont{
+    padding: 0 100px;
+}
+
+@media (min-width: 1600px) and (max-width: 1900px) {
+
+    .PaginationOfferCardComponentC{
+        margin: 0 100px;
+    }
+
+    .CardListCont{
+        padding: 0 100px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+
+    .PaginationOfferCardComponentC{
+        margin: 0 50px;
+    }
+
+    .CardListCont{
+        padding: 0 50px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+
+    .PaginationOfferCardComponentC{
+        margin: 10px 20px;
+    }
+
+    .CardListCont{
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
     .bannerImage{
         height: 266px;
+        width: 100%;
+    }
+
+    .PaginationOfferCardComponentC{
+        margin: 10px 20px;
+    }
+
+    .CardListCont{
+        padding: 0;
     }
 }

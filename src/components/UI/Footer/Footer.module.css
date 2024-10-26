@@ -9,9 +9,12 @@
   flex-wrap: wrap;
 }
 
+Link{
+  text-decoration: none;
+}
+
 .section {
   flex: 1;
-  margin-right: 20px;
   max-width: 300px;
 }
 
@@ -25,15 +28,22 @@
   padding: 0;
 }
 
-.section ul li {
+.LinkPAboutUs{
+  margin-bottom: 45px;
+  cursor: pointer; 
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.LinkP {
   margin-bottom: 20px;
   cursor: pointer; 
   font-size: 24px;
   color: #ffffff;
 }
 
-.section ul li:hover {
-  text-decoration: underline; 
+.LinkP:hover {
+  text-decoration: none; 
 }
 
 .paymentSection {
@@ -88,21 +98,30 @@
   margin-right: 0;
 }
 
-@media (max-width: 360px) {
+.active {
+  font-weight: 700;
+}
+
+@media (min-width: 1000px) and (max-width: 1900px) {
+}
+
+@media (max-width: 999px) {
   .footer {
     flex-direction: column;  
-    padding: 40px;
+    padding: 30px 40px 50px 40px;
   }
 
   .section h3 {
     font-size: 18px;
-    margin: 0;
-    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 21.97px;
   }
 
-  .section ul li {
-    margin-bottom: 10px;
+  .section ul li , .LinkPAboutUs, .LinkP{
     font-size: 13px;
+    font-weight: 300;
+    line-height: 15.87px;
+    margin-bottom: 10px;
   }
 
   .paymentSection {

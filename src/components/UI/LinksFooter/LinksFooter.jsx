@@ -14,7 +14,7 @@ const LinksFooter = () => {
         <img className={classes.img1} src={imgFacebook} alt="Facebook" />
       </div>
       <div className={classes.a}>    
-        <AuthGoogle connection={"http://localhost:5083"}/>
+        <AuthGoogle connection={"http://localhost:5083"} className={classes.img2}/>
       </div>
       <div className={classes.a}>
         <img className={classes.img3} src={imgApple} alt="Apple" />

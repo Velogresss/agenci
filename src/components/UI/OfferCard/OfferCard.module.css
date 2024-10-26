@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   font-family: Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+}
+
+.imageContainer{
   position: relative;
 }
 
@@ -12,98 +16,180 @@
 }
 
 .discount_circle {
+  width: 122px;
+  height: 122px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  position: relative;
-  width: 122px;
-  height: 122px;
-  top: -10%;
-  right: -70%;
+  position: absolute;
+  bottom: -10%;
+  right: 2%;
   background-color: #FCB50B;
   color: black;
   border-radius: 50%;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 48px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.06px;
 }
 
 .title {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 58.59px;
-  margin-top: -75px;
+  line-height: 39.06px;
+  margin: 20px 0 0 0;
 }
 
 .description {
-  font-size: 24px;
   color: #555;
-  margin-top: -16px;
   margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.3px;
 }
 
 .price_container {
   display: flex;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
 }
 
 .old_price {
   color: #888;
-  font-size: 32px;
   margin-right: 8px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29.3px;
 }
 
 .new_price {
   color: red;
-  font-size: 55px;
   font-weight: bold;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.95px;
 }
 
-@media (max-width: 360px) {
-  
-  .offer_card{
-    margin: 0;
+@media (min-width: 1025px) and (max-width: 1900px) {
+  .discount_circle {
+    width: 90px;
+    height: 90px;
+    font-size: 32px;
   }
 
-  .image {
-    width: 143px;
-    border-radius: 10px;
-  }
-  
-  .discount_circle {
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    top: -10%;
-    right: -55%;
-    border-radius: 50%;
-    padding: 5px;
-  }
-  
   .title {
-    font-size: 18px;
-    margin-top: -35px;
+    font-size: 32px;
+    line-height: 39.06px;
   }
-  
-  .description {
-    font-size: 13px;
-    color: #555;
-    margin-top: 15px;
-    margin-bottom: 12px;
+
+  .description,
+  .old_price {
+    font-size: 24px;
+    line-height: 29.3px;
   }
-  
+
   .price_container {
     flex-direction: column;
     align-items: flex-start;
   }
-  
-  .old_price {
+
+  .new_price {
+    font-size: 36px;
+    line-height: 43.95px;
+  }
+}
+
+@media (width: 1024px) {
+  .image {
+    width: 259px;
+    height: 184px;
+  }
+
+  .discount_circle {
+    width: 92px;
+    height: 92px;
+    font-size: 32px;
+    bottom: -15%;
+    right: 15%;
+  }
+
+  .title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.06px;  
+  }
+
+  .description{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.3px; 
+  }
+
+  .old_price{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.3px;
+  }
+
+  .new_price {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.95px;  
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .discount_circle {
+    width: 75px;
+    height: 75px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 599px) {
+  .image {
+    width: 160px;
+    height: 120px;
+  }
+
+  .discount_circle {
+    width: 65px;
+    height: 65px;
     font-size: 20px;
-    margin-right: 8px;
   }
   
+}
+
+@media (max-width: 360px) {
+  .image {
+    width: 143px;
+    height: 102px;
+    border-radius: 5px;
+  }
+
+  .discount_circle {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 21.97px;
+  }
+
+  .description {
+    font-size: 13px;
+    line-height: 15.87px;
+  }
+
+  .old_price {
+    font-size: 20px;
+    line-height: 24.41px;
+  }
+
   .new_price {
     font-size: 30px;
+    line-height: 36.62px;
   }
 }

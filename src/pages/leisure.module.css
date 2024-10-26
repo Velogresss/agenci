@@ -11,3 +11,7 @@
 .PaginationRestCardsComponentCon{
     margin: 0 25px;
 }
+
+@media (max-width: 360px) {
+    
+}

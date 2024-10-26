@@ -1,8 +1,8 @@
 .allContainer{
     padding: 0 168px 100px 168px;
     position: relative;
-    margin: 0;
-    padding: 0;
+    margin: 0 0 50px 0;
+    padding: 0 150px;
     font-family: Calibri;
 }
 
@@ -20,12 +20,13 @@
     width: 659px;
     height: 407px;
     border-radius: 13px;
+    background-size: contain;
 }
 
 .mainText{
     justify-content: space-between;
     text-align: center;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 25px;
 }
 
 .mainContainer{
@@ -34,6 +35,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .mainContainer p{
@@ -41,14 +43,27 @@
     font-weight: 300;
     line-height: 29.3px;
     text-align: left;
-    margin-bottom: 20px;
+    margin: 0 0 25px 0;
 }
 
-.arrow{
+/* .arrow{
     position: absolute;
     width: 86px;
     height: auto;
-    top: 3%;
+    top: 5%;
     left: 2%;
+    cursor: pointer;
+} */
+
+.buttonBackToF{
+    width: 282px;
+    height: 75px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.06px;
+    text-align: center;
+    background-color: #FCB50B;
+    border-radius: 13px;
+    border: none;
     cursor: pointer;
 }

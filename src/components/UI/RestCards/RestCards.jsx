@@ -4,7 +4,7 @@ import url from '../../../img/Offer/offer-1.png'
 
 const RestCard = ({url, alt, text}) => {
   return (
-    <div className={classes.rest_card}>
+    <div className={classes.restCard}>
         <img className={classes.image} src={url} alt={alt}/>
         <p className={classes.text}>{text}</p>
     </div>

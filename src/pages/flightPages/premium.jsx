@@ -29,7 +29,8 @@ function About() {
                 <p>Висадка пасажирів також здійснюється в пріоритетному порядку. Норма безкоштовного провозу багажу становить 30 кг</p>
             </div>
             </div>
-            <img className={classesflightP.arrow} src={arrow} onClick={goBack} alt="" />
+            <button onClick={goBack} className={classesflightP.buttonBackToF}>Відмінити</button>
+            {/* <img className={classesflightP.arrow} src={arrow} onClick={goBack} alt="" /> */}
         </div>
     )
 }

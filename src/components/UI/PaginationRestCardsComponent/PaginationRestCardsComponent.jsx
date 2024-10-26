@@ -89,7 +89,7 @@ const PaginationComponent = ({ data, itemsPerPage }) => {
   };
 
   return (
-    <div>
+    <div className={classes.RestCardContainer}>
       <h1>Обирай місце для відпочинку</h1>
       <div className={classes.grid}>
         {currentItems.map((item, index) => (

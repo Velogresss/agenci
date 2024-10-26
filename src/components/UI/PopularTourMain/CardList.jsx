@@ -53,6 +53,8 @@ const CardList = () => {
   };
 
   return (
+  <div className={styles.cardListContainer}> 
+  <h1>Популярні тури</h1>
     <div className={styles.cardList}>
       {translatedData.map((item, index) => (
         <Card
@@ -65,6 +67,7 @@ const CardList = () => {
         />
       ))}
     </div>
+  </div>
   );
 };
 

@@ -1,5 +1,4 @@
 .navigation {
-  width: 100%;
   background-color: #0a2a47;
   display: flex;
   align-items: center;
@@ -21,28 +20,32 @@
 }
 
 .nav_links {
+  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 24px;
   list-style: none;
   display: flex;
   gap: 50px;
   margin: 0;
   padding: 0;
-}
-
-.nav_links li {
-  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  font-size: 24px;
-}
-
-.nav_links li p {
-  color: white;
-  padding: 2px;
-  margin: 10px 2px;
   text-decoration: none;
 }
 
-.nav_links li p:hover {
-  text-decoration: underline;
+.LinkP {
+  color: white;
+  padding: 2px;
+  margin: 10px 2px;
+}
+
+.LinkP:hover {
+  /* text-decoration: underline; */
   cursor: pointer;
+}
+
+.actions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .actionsIC{
@@ -68,7 +71,7 @@
 }
 
 .active {
-  font-weight: bold; 
+  font-weight: 700;
 }
 
 .LanguageSwitcherCon{
@@ -95,8 +98,77 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1024px) {
+  .logoImage{
+    width: 54px;
+    height: auto;
+  }
 
+  .rows_box{
+    display: none;
+  }
+
+  .menu_open {
+    display: block;
+  }
+
+  .hamburger {
+    margin-right: 50px;
+    display: block;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .LanguageSwitcherCon{
+    margin-right: 25px;
+  }
+
+  .menu_dropdown {
+    color: white;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    background-color: #0a2a47;
+    width: 35%;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .menu_dropdown ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav_links li {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 43.95px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+
+  .logo{
+    margin: 9px 27px;
+    box-sizing: content-box;
+  }
+
+  .logoImage{
+    width: 50px;
+  }
+}
+
+@media (max-width: 360px) {
   .logo{
     margin: 9px 27px;
     box-sizing: content-box;

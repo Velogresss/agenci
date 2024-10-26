@@ -16,9 +16,37 @@ select {
     background-color: transparent;
     cursor: pointer;
     font-size: 32px;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     color: white;
     background-color: #072849;
+    border: none;
+}
+
+option{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    font-size: 28px;
+}
+
+option:hover{
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    .languageIcon {
+        width: 25px; 
+        height: 25px;
+    }
+
+    select{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.3px;       
+    }
+    
+    option{
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -30,14 +58,11 @@ select {
 }
 
 select {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: transparent;
-    cursor: pointer;
     font-size: 16px;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    color: white;
-    background-color: #072849;
+}
+
+option{
+    font-size: 14px;
 }
 
 }

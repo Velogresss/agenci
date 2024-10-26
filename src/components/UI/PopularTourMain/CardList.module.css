@@ -1,9 +1,20 @@
+.cardListContainer h1{
+  text-align: center;
+}
+
 .cardList {
-  margin: 25px;
+  overflow-y: hidden;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 400px); 
-  grid-gap: 20px;
+  grid-gap: 10px;
+}
+
+.cardList{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.95px;
+  text-align: left;
 }
 
 .card.selected {
@@ -11,4 +22,32 @@
   height: auto; 
   transform: scale(1.05);
   z-index: 10; 
+}
+
+@media (min-width: 1145px) and (max-width: 1900px) {
+  .cardList {
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1144px) {
+  .cardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cardList {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    justify-content: left;
+    grid-gap: 20px;
+  }
 }

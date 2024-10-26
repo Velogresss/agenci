@@ -4,9 +4,11 @@ import classes from './OfferCard.module.css'
 const OfferCard = ({ imgUrl, discount, oldPrice, newPrice, title, description }) => {
   return (
     <div className={classes.offer_card}>
+      <div className={classes.imageContainer}>
       <img className={classes.image} src={imgUrl} alt={title} />
-      <div className={classes.discount_circle}>
-        {discount}%
+        <div className={classes.discount_circle}>
+          {discount}%
+        </div>
       </div>
       <h3 className={classes.title}>{title}</h3>
       <p className={classes.description}>{description}</p>

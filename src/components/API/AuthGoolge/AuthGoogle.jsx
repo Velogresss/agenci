@@ -32,7 +32,7 @@ const AuthGoolge = ({ connection }) => {
   };
 
   return (
-    <div>
+    <div className={classes.GoogleLinkConatiner}>
       <img className={classes.img2} onClick={TokenServerInfoData__AuthGoogle} src={imgGoogle} alt="Google" />
     </div>
   );

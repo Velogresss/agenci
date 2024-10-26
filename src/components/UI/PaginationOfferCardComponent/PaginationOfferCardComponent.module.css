@@ -1,10 +1,12 @@
+.POCCWrapper{
+  width: 100%;
+}
+
 h1{
   margin: 50px 20px;
-  font-family: Calibri;
   font-size: 64px;
   font-weight: 700;
   line-height: 78.13px;
-  text-align: left;
 }
 
 .grid {
@@ -34,12 +36,53 @@ h1{
   background-color: blue;
 }
   
+@media (min-width: 1700px) and (max-width: 1900px) {
+  .POCCWrapper h1{
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1699px) {
+
+  h1{
+    margin: 0;
+    font-size: 38px;
+  }
+
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+}
+
+@media (width: 1024px) {
+
+  h1{
+    margin: 0;
+    font-size: 38px;
+  }
+
+  .grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+}
+
+@media (min-width: 361px) and (max-width: 1023px) {
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+}
+
 @media (max-width: 360px) {
 
   h1{
     margin: 0;
     font-size: 36px;
-    font-weight: 700;
   }
 
   .grid{
