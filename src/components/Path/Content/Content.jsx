@@ -64,7 +64,8 @@ import Login from '../../../pages/login';
 import Contacts from '../../../pages/contacts';
 import Leisure from '../../../pages/leisure';
 import AviaTrails from '../../../pages/AviaTrails';
-import Accommodation from '../../../pages/accomodation'
+import Accommodation from '../../../pages/accomodation';
+import ResidenceInfoPage from '../../../pages/ResidenceInfoPage';
 
 import Business from '../../../pages/flightPages/business';
 import Econom from '../../../pages/flightPages/econom';
@@ -76,6 +77,7 @@ const Content = () => {
     <Routes>
       <Route path="/about" element={<About />} />
       <Route path="/accommodation" element={<Accommodation/>} />
+      <Route path="/residence/:id" element={<ResidenceInfoPage/>} />
       <Route path="/contacts" element={<Contacts />} />
       <Route path="/flights" element={<AviaTrails />} />
       <Route path="/leisure" element={<Leisure />} />
@@ -89,7 +91,7 @@ const Content = () => {
       <Route path="/flights/premium" element={<Premium />} />
       <Route path="/flights/first" element={<First />} />
       <Route path="/all" element={<All />} />
-      <Route path="*" element={<All />} /> {/* Рендерить All за замовчуванням */}
+      <Route path="*" element={<All />} />
     </Routes>
   );
 };

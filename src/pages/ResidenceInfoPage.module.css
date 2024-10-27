@@ -1,0 +1,334 @@
+.container {
+    padding: 0 130px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .rateComponent{
+    width: 100%;
+  }
+
+  .residenceInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageBox{
+    height: 467px;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .mainPhoto {
+    width: 726px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 13px;
+  }
+  
+  .photoGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 362px);
+    grid-template-rows: repeat(2, 232px);
+    gap: 5px;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+  }
+  
+  .galleryPhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+  }
+  
+  .infoBox {
+    width: 1457px;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    border: 1px black solid;
+    border-radius: 13px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .advantagesContainer{
+    width: 100%;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+  }
+
+  .advantagesContainer h3{
+    margin: 20px 20px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.06px;
+  }
+
+  .advantagesContainer ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .advantageItem {
+    list-style-type: none; 
+    color: #00274D;
+    margin: 10px 0 10px 20px;
+    font-family: Calibri;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.3px;
+  }
+
+  .confirmContainer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .confirmContainer p{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.83px;
+    margin: 20px 0;
+  }
+
+  .selectButton {
+    width: 75%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #ffd700;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.06px; 
+    border-radius: 13px;
+  }
+  
+  .apartmentCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 686px; */
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 13px;
+  }
+
+  .apartmentCard h3{
+    margin: 10px 0 10px 10px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.83px;
+  }
+
+  .apartmentCardAll{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .apartmentCardImageText{
+    height: auto;
+    padding: 10px;
+    margin: 0 0 20px 0;
+  }
+
+  .apartmentImage {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 13px;
+  }
+  
+  .apartmentDetails {
+    display: grid;
+    grid-template-columns: 30% 25% 45%;
+    width: 100%;
+    border-top: 0.5px solid black;
+    border-left: 0.5px solid black;
+  }
+
+  .tagsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tagsContainer ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  .tagItem {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.3px;
+    list-style: none;
+  }
+
+  .detailsSection {
+    display: grid;
+    grid-template-rows: auto 95%;
+    border-right: 1px solid black;
+  }
+  
+  .detailsSectionCon{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px black solid;
+  }
+
+  .detailsSectionCon p{
+    margin: 10px;
+    height: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.06px;
+  }
+
+  .detailsSectionMain{
+    padding: 20px;
+  }
+  
+  .detailsSectionMain ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  .detailsSectionMain li{
+    list-style: none;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.3px;
+  }
+
+  .peopleIcon, .price{
+    display: grid;
+    grid-template-rows: auto 95%;
+    border-right: 1px solid black;
+    font-size: 18px;
+  }
+  
+  .peopleIcon{
+    text-align: center;
+  }
+
+  .peopleIcon p{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.06px;
+  }
+
+  .peopleIcon span{
+    font-size: 64px;
+  }
+
+  .price {
+    text-align: right;
+  }
+  
+  .bookButton {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }  
+
+  .ratingContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin-left: 35px;
+  }
+  
+  .ratingContainerH{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ratingText {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.06px;
+    margin: 20px 0 20px 0;
+  }
+  
+  .priceText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.59px;
+  }
+
+  .stars {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-size: 32px;
+  }
+  
+  .filledStar {
+    color: #00274D;
+  }
+  
+  .emptyStar {
+    color: #d3d3d3;
+  }
+  
+  .cleanliness,
+  .reviewsLink {
+    margin: 10px 0 0 20px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.3px; 
+  }
+  
+  .reviewsLink {
+    color: #00274D;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .returnButton{
+    width: 25%;
+    padding: 10px 20px;
+    margin: 15px 0;
+    background-color: #FCB50B;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.06px;   
+    border-radius: 13px;
+  }
+
+  .proceedButton{
+    width: 25%;
+    padding: 10px 20px;
+    margin: 15px 0;
+    color: #FFFFFF;
+    background-color: #072849;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.06px;
+    border-radius: 13px;
+  }

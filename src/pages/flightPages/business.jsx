@@ -8,7 +8,7 @@ import arrow from '../../img/AviaTrails/Arrow.png'
 function About() {
     const goBack = () => {
     window.history.back();
-    };
+};
 
     return (
         <div className={classesflightP.allContainer}>
