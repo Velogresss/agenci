@@ -47,7 +47,7 @@ margin: 10px 0;
   background-color: #e1b50c;
 }
 
-@media (min-width: 800px) and (max-width: 1650px) {
+@media (min-width: 800px) and (max-width: 1900px) {
     .wrapper{
       width: 788px;
       height: 330px;

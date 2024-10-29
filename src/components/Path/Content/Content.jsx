@@ -67,6 +67,8 @@ import AviaTrails from '../../../pages/AviaTrails';
 import Accommodation from '../../../pages/accomodation';
 import ResidenceInfoPage from '../../../pages/ResidenceInfoPage';
 
+import Results from '../../../pages/Results'
+
 import Business from '../../../pages/flightPages/business';
 import Econom from '../../../pages/flightPages/econom';
 import Premium from '../../../pages/flightPages/premium';
@@ -78,6 +80,7 @@ const Content = () => {
       <Route path="/about" element={<About />} />
       <Route path="/accommodation" element={<Accommodation/>} />
       <Route path="/residence/:id" element={<ResidenceInfoPage/>} />
+      <Route path="/results" element={<Results />} />
       <Route path="/contacts" element={<Contacts />} />
       <Route path="/flights" element={<AviaTrails />} />
       <Route path="/leisure" element={<Leisure />} />

@@ -1,0 +1,80 @@
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1{
+  font-family: Calibri;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.13px;
+}
+
+.accommodatioGridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 340px);
+    grid-template-rows: repeat(3, 420px);
+    grid-gap: 40px;
+  }
+  
+  .accommodationCard {
+    text-align: center;
+    width: 339px;
+    height: 339px;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    object-fit: cover;
+  }
+  
+  .text {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.95px;
+  }
+  
+  @media (max-width: 1470px) {
+    .accommodatioGridContainer {
+      grid-template-columns: repeat(4, 300px);
+      grid-template-rows: repeat(3, 400px);
+      grid-gap: 10px;
+    }
+  
+    .accommodationCard {
+      width: 280px;
+      height: 280px;
+    }
+  }
+  
+  @media (max-width: 1260px) {
+    .accommodatioGridContainer {
+      grid-template-columns: repeat(3, 300px);
+      grid-template-rows: repeat(3, 400px);
+      grid-gap: 10px;
+    }
+  
+    .accommodationCard {
+      width: 280px;
+      height: 280px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .accommodationCard {
+      width: 138px;
+      height: 138px;
+    }
+  
+    .text {
+      font-size: 18px;
+      line-height: 21.97px;
+      color: #1B1404;
+    }
+  }

@@ -3,12 +3,19 @@ import { useParams } from 'react-router-dom';
 import { fetchResidenceInfo } from '../components/API/Accomodation/fetchResidenceInfo';
 import classes from './ResidenceInfoPage.module.css';
 import RatingComponent  from '../components/UI/RatingComponent/RatingComponent'
+import RatingComponentMini from '../components/UI/RatingComponentMini/RatingComponentMini'
 
 const ResidenceInfoPage = () => {
   const { id } = useParams();
   const [residenceInfo, setResidenceInfo] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const [priceForCont, setPriceForCont] = useState(null);
+
+  const handleBookingClick = (price) => {
+    setPriceForCont(price);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,24 +34,11 @@ const ResidenceInfoPage = () => {
 
   if (loading) return <p>Завантаження...</p>;
   if (error) return <p>Помилка: {error}</p>;
-
-  const calculateAverageRating = (rate) => {
-    return Math.round(rate / 1000);
-  };
-
-  const renderStars = (rating) => {
-    return Array.from({ length: 5 }, (_, index) => (
-      <span key={index} className={index < rating ? classes.filledStar : classes.emptyStar}>
-        ★
-      </span>
-    ));
-  };
   
   const goBack = () => {
     window.history.back();
   }
   
-  const averageRating = calculateAverageRating(residenceInfo.residence.rate);
 
   return (
     <div className={classes.container}>
@@ -69,12 +63,8 @@ const ResidenceInfoPage = () => {
       </div>
         <div className={classes.infoBox}>
           <div className={classes.ratingContainer}>
-            <div className={classes.ratingContainerH}>
-              <p className={classes.ratingText}>Дуже добре</p>
-              <div className={classes.stars}>{renderStars(averageRating)}</div>
-            </div>
-            <p className={classes.cleanliness}>Чистота</p>
-            <a href="#" className={classes.reviewsLink}>Відгуки&gt;</a>
+            <RatingComponentMini rate={residenceInfo.residence.rate}/>
+            <a href="#" className={classes.reviewsLink}>Відгуки&gt;</a> 
           </div>
           <div className={classes.advantagesContainer}>
             <h3>Переваги</h3>
@@ -87,8 +77,12 @@ const ResidenceInfoPage = () => {
             </ul>
           </div>
           <div className={classes.confirmContainer}> 
-            <p>Ціна: {residenceInfo.residence.price} UAH за 1 ніч</p>
+          {priceForCont && (
+            <div className={classes.confirmContainer}>
+            <p>Ціна: {priceForCont} UAH за 1 ніч</p>
             <button className={classes.selectButton}>Обрати номер</button>
+          </div>
+      )}
           </div>
         </div>
       </div>
@@ -141,7 +135,11 @@ const ResidenceInfoPage = () => {
               </div>
               <div className={classes.priceText}>
                 <p>{apartment.info.price} UAH за 1 ніч</p>
-                <button className={classes.selectButton}>Забронювати</button>
+                <button 
+                  className={classes.selectButton}
+                  onClick={() => handleBookingClick(apartment.info.price)}
+                >Забронювати
+                </button>
               </div>
             </div>           
           </div>

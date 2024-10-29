@@ -1,0 +1,88 @@
+.container {
+    width: 444px;
+    height: 75px;
+    border: 1px solid #717171;
+    border-radius: 13px;
+    position: relative;
+  }
+  
+  .button {
+    margin-left: auto;
+    margin-right: auto;
+    color: #717171;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 39.06px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .summary {
+    
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid #072849;
+    padding: 30px;
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 13px;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .span{
+    margin-right: 50px;
+  }
+
+  .counterButton {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    font-size: 32px;
+    border-radius: 13px;
+  }
+  
+  .count {
+    margin: 0 25px;
+    font-size: 32px;
+  }
+  
+  .confirmButton {
+    width: 100%;
+    padding: 8px;
+    background-color: #072849;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    margin-top: 10px;
+    border-radius: 13px;
+  }  
+
+@media (min-width: 800px) and (max-width: 1900px) {  
+
+}
+
+@media (max-width: 800px) {
+
+}

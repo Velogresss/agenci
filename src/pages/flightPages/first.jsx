@@ -1,9 +1,6 @@
 import React from 'react';
-
 import classesflightP from './flightP.module.css'
-
 import img from '../../img/AviaTrails/First.jpg'
-import arrow from '../../img/AviaTrails/Arrow.png'
 
 function About() {
     const goBack = () => {
@@ -30,7 +27,6 @@ function About() {
             </div>
             </div>
             <button onClick={goBack} className={classesflightP.buttonBackToF}>Відмінити</button>
-            {/* <img className={classesflightP.arrow} src={arrow} onClick={goBack} alt="" /> */}
         </div>
     )
 }

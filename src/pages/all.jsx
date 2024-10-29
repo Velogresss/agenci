@@ -1,6 +1,5 @@
-import React from 'react'
+// import from 'react'
 import bannerImage from '../img/lake.png'
-import PaginationRestCardsComponent from '../components/UI/PaginationRestCardsComponent/PaginationRestCardsComponent'
 import PaginationOfferCardComponent from '../components/UI/PaginationOfferCardComponent/PaginationOfferCardComponent'
 import AboutUs from '../components/UI/AboutUsMainComponent/AboutUs'
 import classes from './all.module.css'

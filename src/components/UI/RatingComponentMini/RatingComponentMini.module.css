@@ -1,0 +1,30 @@
+.ratingContainer {
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .overallRating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ratingText {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.83px; 
+    margin: 20px 20px;   
+    margin-right: 15px;
+  }
+  
+  .stars {
+    font-size: 40px;
+    color: #004080;
+  }
+  
+  .filledStar {
+    color: #004080;
+  }
+  
+  .emptyStar {
+    color: #ccc;
+  }

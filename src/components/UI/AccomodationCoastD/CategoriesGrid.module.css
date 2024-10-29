@@ -1,8 +1,9 @@
 .accommodatioGridContainer{
   display: grid;
   grid-template-columns: repeat(4, 340px);
-  grid-template-rows: repeat(3, 420px);
+  grid-template-rows: repeat(1, 420px);
   grid-gap: 40px;
+  margin-bottom: 100px;
 }
 
 .accommodationCard {
@@ -36,7 +37,7 @@
 
   .accommodatioGridContainer{
     grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(1, 400px);
     grid-gap: 20px;
   }
 
@@ -50,7 +51,7 @@
 
   .accommodatioGridContainer{
     grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(1, 400px);
     grid-gap: 10px;
   }
 

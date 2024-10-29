@@ -11,3 +11,99 @@
   line-height: 78.13px;
   margin: 50px 25px;
 }
+
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bannerImageWrapper{
+  width: 100%;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.bannerImage{
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.FlightSearchWrapper{
+  position: absolute;
+  z-index: 2;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.PaginationOfferCardComponentC{
+  margin: 20px 100px;
+}
+
+.AboutUsC{
+  margin-bottom: 50px;
+}
+
+.CardListCont{
+  padding: 0 100px;
+}
+
+@media (min-width: 1600px) and (max-width: 1750px) {
+
+  .bannerImage{
+    width: 100%;
+    height: 604px;
+  }
+
+  .PaginationOfferCardComponentC{
+      margin: 0 100px;
+  }
+
+  .CardListCont{
+      padding: 0 100px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+
+  .bannerImage{
+    width: 100%;
+    height: 604px;
+  }
+
+  .PaginationOfferCardComponentC{
+      margin: 0 50px;
+  }
+
+  .CardListCont{
+      padding: 0 50px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+
+  .PaginationOfferCardComponentC{
+      margin: 10px 20px;
+  }
+
+  .CardListCont{
+      padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .bannerImage{
+      height: 266px;
+      width: 100%;
+  }
+
+  .PaginationOfferCardComponentC{
+      margin: 10px 20px;
+  }
+
+  .CardListCont{
+      padding: 0;
+  }
+}

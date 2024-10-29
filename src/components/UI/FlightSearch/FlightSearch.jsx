@@ -5,7 +5,10 @@ import moment from 'moment';
 import 'daterangepicker';
 import styles from './FlightSearch.module.css';
 
+import { useTranslation } from 'react-i18next';
+
 const FlightSearch = () => {
+  const { t } = useTranslation();
   const today = new Date();
   const [departureCity, setDepartureCity] = useState('');
   const [arrivalCity, setArrivalCity] = useState('');
@@ -34,14 +37,14 @@ const FlightSearch = () => {
       <div className={styles.container}>
         <input
           type="text"
-          placeholder="Місто вильоту"
+          placeholder={t('flightSearch.cityDeparture')}
           value={departureCity}
           onChange={(e) => setDepartureCity(e.target.value)}
           className={`${styles.input} ${styles.inputBox}`}
         />
         <input
           type="text"
-          placeholder="Місто прибуття"
+          placeholder={t('flightSearch.cityArrival')}
           value={arrivalCity}
           onChange={(e) => setArrivalCity(e.target.value)}
           className={`${styles.input} ${styles.inputBox}`}
@@ -58,7 +61,7 @@ const FlightSearch = () => {
           onClick={handleSearch}
           className={`${styles.button} ${styles.inputBox}`}
         >
-          Пошук
+          {t('flightSearch.searсh')}
         </button>
       </div>
     </div>

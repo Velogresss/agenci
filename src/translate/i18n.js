@@ -56,6 +56,11 @@ const resources = {
         jungleTitle: "5 places you must not miss in the Jungle",
         africaTitle: "5 best things to do around Africa",
         chinaTitle: "5 best places to visit in China",
+      },
+      flightSearch: {
+        searсh: "Search",
+        cityArrival: "City of arrival",
+        cityDeparture: "City of departure"
       }
     }
   },
@@ -113,6 +118,11 @@ const resources = {
         jungleTitle: "5 місць які ви не повинні пропустити в Джунглях",
         africaTitle: "5 найкращих речей, якими можна зайнятися в околицях Африки",
         chinaTitle: "5 найкращих місць, які тільки можна відвідати в Китаї",
+      },
+      flightSearch: {
+        searсh: "Пошук",
+        cityArrival: "Місто прибуття",
+        cityDeparture: "Місто вильоту"
       }
     }
   }
