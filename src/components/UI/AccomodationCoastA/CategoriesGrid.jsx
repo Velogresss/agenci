@@ -57,12 +57,6 @@ function CategoriesGrid() {
             alt={residence.residenceName}
           />
           <p className={classes.text}>{residence.residenceName}</p>
-          <p className={classes.address}>Адреса: {residence.address}</p>
-          <p className={classes.price}>Ціна: {residence.price} UAH</p>
-          {residence.promotionalPrice > 0 && (
-            <p className={classes.promotionalPrice}>Акційна ціна: {residence.promotionalPrice} UAH</p>
-          )}
-          <p className={classes.rate}>Рейтинг: {residence.rate}</p>
         </div>
       ))}
     </div>

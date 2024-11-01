@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from './RoomSearchPeople.module.css';
 
-const RoomSearchPeople = ({ onPeopleChange }) => {
-  const [adults, setAdults] = useState(1);
-  const [children, setChildren] = useState(0);
+import { useSelector } from 'react-redux';
+
+const RoomSearchPeople = ({onPeopleChange}) => {
+  const roomSearchData = useSelector((state) => state.roomSearch);
+  const [adults, setAdults] = useState(roomSearchData.adults);
+  const [children, setChildren] = useState(roomSearchData.childr);
   const [rooms, setRooms] = useState(1);
   const [isOpen, setIsOpen] = useState(false); 
 

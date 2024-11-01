@@ -1,9 +1,10 @@
 .container {
     width: 444px;
     height: 75px;
-    border: 1px solid #717171;
+    border: 1px solid #ccc;
     border-radius: 13px;
     position: relative;
+    display: flex;
   }
   
   .button {
@@ -18,10 +19,8 @@
     line-height: 39.06px;
     cursor: pointer;
     outline: none;
-  }
-  
-  .summary {
-    
+    text-align: center;
+    align-items: center;
   }
   
   .icon {
@@ -70,8 +69,8 @@
   .confirmButton {
     width: 100%;
     padding: 8px;
-    background-color: #072849;
-    color: white;
+    background-color: #FCB50B;
+    color: black;
     border: none;
     cursor: pointer;
     font-size: 32px;
@@ -80,7 +79,18 @@
   }  
 
 @media (min-width: 800px) and (max-width: 1900px) {  
+  .container {
+    width: 677px;
+    height: 54px;
+    margin-bottom: 20px;
+  }
 
+  .button{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.41px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 800px) {

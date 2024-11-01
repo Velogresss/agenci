@@ -1,8 +1,14 @@
 .container {
-    padding: 0 130px;
+    padding: 20px 130px;
     font-family: Arial, sans-serif;
   }
   
+  .containerRoomSearch{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .rateComponent{
     width: 100%;
   }
@@ -102,7 +108,7 @@
     width: 75%;
     padding: 10px 20px;
     margin: 10px 0;
-    background-color: #ffd700;
+    background-color: #FCB50B;
     border: none;
     cursor: pointer;
     font-size: 32px;
@@ -206,6 +212,7 @@
     font-size: 24px;
     font-weight: 300;
     line-height: 29.3px;
+    margin-bottom: 35px;
   }
 
   .peopleIcon, .price{
@@ -235,7 +242,7 @@
   
   .bookButton {
     padding: 10px 20px;
-    background-color: #ffd700;
+    background-color: #FCB50B;
     border: none;
     cursor: pointer;
     font-size: 16px;

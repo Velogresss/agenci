@@ -1,0 +1,44 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.containerInner {
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 14px;
+  border-radius: 13px;
+}
+
+.containerInner h3{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.83px;
+  margin: 0;
+}
+
+.containerInner p{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29.3px;
+}
+
+.containerInner2{
+  display: flex;
+  justify-content: end;
+}
+
+.containerInner2 button{
+  width: 282px;
+  height: 75px;
+  color: #FFFFFF;
+  background-color: #072849;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 39.06px;
+  border-radius: 13px;
+}

@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 13px;
+  }
+  
+  .container1{
+    display: flex;
+  }
+
+  .image {
+    margin: 20px;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 13px;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.3px;
+  }
+
+  .info h2{
+    margin: 20px 0 20px 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.83px;
+  }
+  
+  .container2{
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container2 p{
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.3px;
+  }

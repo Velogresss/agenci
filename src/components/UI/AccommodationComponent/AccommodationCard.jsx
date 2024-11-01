@@ -21,8 +21,27 @@ const AccommodationCard = () => {
     fetchData();
   }, []);
 
-  const handleCardClick = (id) => {
-    navigate(`/residence/${id}`);
+  const handleSearch = async (search_id) => {
+    const params = {
+      count: encodeURIComponent(10),
+      category: encodeURIComponent(search_id)
+    };
+
+    const queryString = Object.keys(params)
+      .map(key => `${key}=${params[key]}`)
+      .join('&');
+
+    console.log('queryString:', {queryString}); 
+
+    try {
+      const response = await fetch(`http://localhost:5084?${queryString}`);
+      const data = await response.json();
+
+      navigate('/results', { state: { data } });
+
+    } catch (error) {
+      console.error('Error fetching search results:', error);
+    }
   };
 
   if (error) return <p>Помилка: {error}</p>;
@@ -33,7 +52,7 @@ const AccommodationCard = () => {
         <div
           key={category.id}
           className={classes.accommodationCard}
-          onClick={() => handleCardClick(category.id)}
+          onClick={() => handleSearch(category.id)}
         >
           <img
             className={classes.image}

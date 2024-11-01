@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px 20px 150px;
+  }
+  
+  .gridContainerMain{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+  }
+
+  .leftColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .rightColumn {
+    width: 100%;
+  }
+  
+  .returnButton{
+    width: 282px;
+    height: 75px;
+    background-color: #FCB50B;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 39.06px;   
+    border-radius: 13px;
+  }

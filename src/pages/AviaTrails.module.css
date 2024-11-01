@@ -15,11 +15,13 @@
     font-weight: 300;
     line-height: 39.06px;
     text-align: center;
+    align-items: center;
+    display: flex;
   }
 
   .label input{
-    width: 1.1em;
-    height: 1.1em;
+    width: 1.2em;
+    height: 1.2em;
     margin-right: 10px;
     margin-left: 0;
   }

@@ -38,13 +38,13 @@ margin: 10px 0;
 .button {
   margin: 0;
   width: 444px;
-  background-color: #f1c40f;
+  background-color: #FCB50B;
   border: none;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #e1b50c;
+  background-color: #FCB50B;
 }
 
 @media (min-width: 800px) and (max-width: 1900px) {
