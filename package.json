@@ -42,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@rollup/plugin-terser": "^0.4.4",
+    "glob": "^9.3.5",
+    "rimraf": "^4.4.1"
   }
 }
