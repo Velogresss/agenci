@@ -41,7 +41,7 @@ const FlightSearch = () => {
   }, [startDate, endDate]);
 
     return (
-      <div>
+      <div className={styles.aviaTrailsCont}>
         <h2 className={styles.title}>Переліт</h2>
 
         <div className={styles.options}>
