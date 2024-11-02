@@ -4,7 +4,6 @@ const FetchDataComponent = () => {
   const [response, setResponse] = useState(null);
   const [error, setError] = useState(null);
 
-  // Функція, що виконує POST-запит
   const sendRequest = (url) => {
     let r = navigator.userAgent;
     let formData = new FormData();

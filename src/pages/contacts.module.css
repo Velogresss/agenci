@@ -2,7 +2,6 @@
   padding: 50px 65px;
   font-size: 40px;
   font-weight: 400;
-  font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 .wrapper img{
@@ -44,16 +43,16 @@
   margin: 10px 0;
   padding: 20px 15px;
   border: 2px solid #000;
-  border-radius: 10px;
+  border-radius: 13px;
   font-size: 40px;
 }
 
 .contactForm button {
   padding: 15px;
   width: 50%;
-  background-color: #f0c14b;
+  background-color: #FCB50B;
   border: none;
-  border-radius: 10px;
+  border-radius: 13px;
   cursor: pointer;
   font-size: 32px;
 }

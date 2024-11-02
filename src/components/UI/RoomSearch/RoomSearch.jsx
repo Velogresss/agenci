@@ -13,13 +13,17 @@ const RoomSearch = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate(); 
 
+  const today = new Date();
+  const tomorrow = new Date();
+  tomorrow.setDate(today.getDate() + 1);
+
   const { search: reduxSearch, startDate: reduxStartDate, endDate: reduxEndDate, adults: reduxAdults, children: reduxChildren, rooms: reduxRooms } = useSelector(state => state.roomSearch);
 
   const [search, setSearch] = useState(reduxSearch || '');
   const [maxPeople, setMaxPeople] = useState((reduxAdults || 1) + (reduxChildren || 0));
 
   const [startDate, setStartDate] = useState(reduxStartDate || new Date());
-  const [endDate, setEndDate] = useState(reduxEndDate || new Date());
+  const [endDate, setEndDate] = useState(reduxEndDate || tomorrow);
 
   const [adults, setAdults] = useState(reduxAdults || 1);
   const [childr, setChildren] = useState(reduxChildren || 0);

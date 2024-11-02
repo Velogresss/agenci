@@ -38,7 +38,7 @@ const ContactPage = () => {
       <div className={classes.contactForm}>
         <h2>{t('contactsPage.titleForm')}</h2>
         <form onSubmit={handleSubmit}>
-          <label>Ім’я</label>
+          <label>{t('contactsPage.nameLable')}</label>
           <input
             type="text"
             name="name"
@@ -54,7 +54,7 @@ const ContactPage = () => {
             onChange={handleChange}
             required
           />
-          <label>Тема</label>
+          <label>{t('contactsPage.subjectLable')}</label>
           <input
             type="text"
             name="subject"
@@ -62,7 +62,7 @@ const ContactPage = () => {
             onChange={handleChange}
             required
           />
-          <label>Повідомлення</label>
+          <label>{t('contactsPage.messageLable')}</label>
           <textarea
             name="message"
             value={formData.message}

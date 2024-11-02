@@ -10,10 +10,13 @@ import { useTranslation } from 'react-i18next';
 const FlightSearch = () => {
   const { t } = useTranslation();
   const today = new Date();
+  const tomorrow = new Date();
+  tomorrow.setDate(today.getDate() + 1);
+
   const [departureCity, setDepartureCity] = useState('');
   const [arrivalCity, setArrivalCity] = useState('');
   const [startDate, setStartDate] = useState(today);
-  const [endDate, setEndDate] = useState(today);
+  const [endDate, setEndDate] = useState(tomorrow);
 
   useEffect(() => {
     $('input[name="daterange"]').daterangepicker({

@@ -1,4 +1,3 @@
-// import from 'react'
 import bannerImage from '../img/lake.png'
 import PaginationOfferCardComponent from '../components/UI/PaginationOfferCardComponent/PaginationOfferCardComponent'
 import AboutUs from '../components/UI/AboutUsMainComponent/AboutUs'

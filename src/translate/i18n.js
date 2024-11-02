@@ -26,7 +26,10 @@ const resources = {
         titleSub: "You can find out the details by calling:",
         titleEnd: "We work around the clock.",
         titleForm: "Feedback",
-        formButton: "Send"
+        formButton: "Send",
+        nameLable: "Name",
+        subjectLable: "Topic",
+        messageLable: "Message"
       },
       header: {
         contacts: "Contacts",
@@ -42,15 +45,15 @@ const resources = {
       },
       CardListAll: {
         France: "France",
+        DetailsFrance: "France is known for its rich history, art, and cuisine. Explore the Eiffel Tower, Louvre Museum, and the beautiful French countryside.",
         Turkey: "Turkey",
+        DetailsTurkey: "Turkey offers a unique blend of Eastern and Western cultures. Discover Istanbul’s historic mosques, bazaars, and beautiful coastlines.",
         Japan: "Japan",
+        DetailsJapan: "Japan is a land of contrasts, where ancient traditions meet modern technology. Visit Tokyo, Kyoto, and enjoy stunning cherry blossoms in spring.",
         Dubai: "Dubai",
+        DetailsDubai: "Dubai is famous for its luxury shopping, ultramodern architecture, and vibrant nightlife scene, including the iconic Burj Khalifa.",
         Korea: "Korea",
-        DetailsFrance: "Details about France...",
-        DetailsTurkey: "Details about Turkey...",
-        DetailsJapan: "Details about Japan...",
-        DetailsDubai: "Details about Dubai...",
-        DetailsKorea: "Details about Korea..."
+        DetailsKorea: "South Korea is a dynamic country with a rich cultural heritage. Explore Seoul’s palaces, K-pop culture, and traditional Korean cuisine.",
       },
       ImageGalleryLesure: {
         jungleTitle: "5 places you must not miss in the Jungle",
@@ -61,7 +64,80 @@ const resources = {
         searсh: "Search",
         cityArrival: "City of arrival",
         cityDeparture: "City of departure"
-      }
+      },
+      cardList:{
+        title: 'Popular tours',
+      },
+      POCC: {
+        title: 'Promotional offers',
+      },
+      Footer: {
+        AboutUs: "About Us",
+        Contacts: "Contacts",
+        Flights: "Flights",
+        About: "About Us",
+        Accommodation: "Accommodation",
+        Leisure: "Leisure",
+        AirportTaxi: "Airport Taxi",
+        OtherServices: "Other Services",
+        EventPlanning: "Event planning and execution for clients and partners",
+        CustomerSupport: "Customer support before and after the trip",
+        Consultation: "Consultation and information on travel services",
+        PaymentMethods: "Payment Methods",
+        Support: "Support",
+        CustomerSupportService: "Customer Support Service",
+        ServiceGuarantee: "Service Guarantee"
+      },
+      offers: [
+        {
+          imgUrl: 'myImage1',
+          discount: 39,
+          oldPrice: '400$',
+          newPrice: '302$',
+          title: 'Flight tour to Prague',
+          description: 'This is the largest castle complex in the world, a symbol of the Czech state for over a thousand years. It is included in the UNESCO World Heritage list and the Guinness Book of Records...',
+        },
+        {
+          imgUrl: 'myImage2',
+          discount: 55,
+          oldPrice: '400$',
+          newPrice: '190$',
+          title: 'Two Capitals: Yerevan and Tbilisi',
+          description: 'Discover the charm and rich cultural traditions of Yerevan and Tbilisi in one unforgettable journey!',
+        },
+        {
+          imgUrl: 'myImage3',
+          discount: 12,
+          oldPrice: '400$',
+          newPrice: '372$',
+          title: 'Lavender in Provence',
+          description: 'Immerse yourself in the atmosphere of Provence, where luxurious lavender fields stretch to the horizon, creating incredible landscapes that enchant with their purple glow.',
+        },
+        {
+          imgUrl: 'myImage4',
+          discount: 29,
+          oldPrice: '558$',
+          newPrice: '396$',
+          title: 'Tour to Cyprus',
+          description: 'Welcome to Cyprus, the island that is the birthplace of the goddess of love, Aphrodite. Here, out of 365 days a year, 300 are sunny! Dive into the warm and sunny spring, enjoying...',
+        },
+        {
+          imgUrl: 'myImage5',
+          discount: 50,
+          oldPrice: '408$',
+          newPrice: '204$',
+          title: 'Tulip Festival in Istanbul',
+          description: 'We invite you to enjoy the bright colors and aromas at the Tulip Festival in Istanbul, where this beautiful floral event...',
+        },
+        {
+          imgUrl: 'myImage6',
+          discount: 60,
+          oldPrice: '491$',
+          newPrice: '196$',
+          title: 'Roman Weekend',
+          description: 'Set off on an exciting journey to Rome for a wonderful weekend where history, culture, and gastronomy blend in perfect harmony.',
+        }
+      ]
     }
   },
   uk: {
@@ -88,7 +164,10 @@ const resources = {
         titleSub: "Дізнатися за подробностями можна за телефонами:",
         titleEnd: "Працюємо круглосуточно.",
         titleForm: "Зворотній зв’язок",
-        formButton: "Надіслати"
+        formButton: "Надіслати",
+        nameLable: "Ім'я",
+        subjectLable: "Тема",
+        messageLable: "Повідомлення"
       },
       header: {
         contacts: "Контакти",
@@ -104,15 +183,15 @@ const resources = {
       },
       CardListAll: {
         France: "Франція",
+        DetailsFrance: "Франція відома своєю багатою історією, мистецтвом і кухнею. Відвідайте Ейфелеву вежу, Лувр і мальовничу французьку провінцію.",
         Turkey: "Туреччина",
+        DetailsTurkey: "Туреччина поєднує східні та західні культури. Відкрийте для себе історичні мечеті, базари Стамбула і красиві узбережжя.",
         Japan: "Японія",
+        DetailsJapan: "Японія – це країна контрастів, де древні традиції поєднуються з сучасними технологіями. Відвідайте Токіо, Кіото, насолодіться сакурою навесні.",
         Dubai: "Дубай",
+        DetailsDubai: "Дубай відомий розкішними магазинами, ультрасучасною архітектурою та нічним життям, включаючи знаковий Бурдж Халіфа.",
         Korea: "Корея",
-        DetailsFrance: "Деталі про Францію...",
-        DetailsTurkey: "Деталі про Туреччину...",
-        DetailsJapan: "Деталі про Японію...",
-        DetailsDubai: "Деталі про Дубай...",
-        DetailsKorea: "Деталі про Корею..."
+        DetailsKorea: "Південна Корея – це динамічна країна з багатою культурною спадщиною. Досліджуйте палаци Сеула, культуру K-pop і традиційну кухню.",
       },
       ImageGalleryLesure: {
         jungleTitle: "5 місць які ви не повинні пропустити в Джунглях",
@@ -123,7 +202,80 @@ const resources = {
         searсh: "Пошук",
         cityArrival: "Місто прибуття",
         cityDeparture: "Місто вильоту"
-      }
+      },
+      cardList: {
+        title: 'Популярні тури',
+      },
+      POCC: {
+        title: 'Акційні пропозиції',
+      },
+      Footer: {
+        AboutUs: "Про нас",
+        Contacts: "Контакти",
+        Flights: "Авіарейси",
+        About: "Про нас",
+        Accommodation: "Помешкання",
+        Leisure: "Дозвілля",
+        AirportTaxi: "Таксі з/до аеропорту",
+        OtherServices: "Інші послуги",
+        EventPlanning: "Планування та проведення заходів для клієнтів та партнерів",
+        CustomerSupport: "Підтримка клієнтів до та після подорожі",
+        Consultation: "Консультації та надання інформації про туристичні послуги",
+        PaymentMethods: "Способи оплати",
+        Support: "Підтримка",
+        CustomerSupportService: "Служба підтримки клієнтів",
+        ServiceGuarantee: "Гарантія обслуговування"
+      },
+      offers: [
+        {
+          imgUrl: 'myImage1',
+          discount: 39,
+          oldPrice: '20498',
+          newPrice: '12481 UAH',
+          title: 'Авіатур до Праги',
+          description: 'Це найбільший замковий комплекс у світі, символ чеської держави вже понад тисячу років. Він включений до списку Всесвітньої спадщини ЮНЕСКО та книги рекордів Гіннеса...',
+        },
+        {
+          imgUrl: 'myImage2',
+          discount: 55,
+          oldPrice: '20829',
+          newPrice: '12481 UAH',
+          title: 'Дві столиці: Єреван та Тбілісі',
+          description: 'Відкрийте для себе чарівність і багатство культурних традицій Єревану і Тбілісі в одному незабутньому подорожі!',
+        },
+        {
+          imgUrl: 'myImage3',
+          discount: 12,
+          oldPrice: '6281',
+          newPrice: '4835 UAH',
+          title: 'Лаванда в Прованс',
+          description: 'Зануртеся в атмосферу Провансу, де розкішні поля лаванди розстилаються до горизонту, створюючи неймовірні пейзажі, що зачаровують своїм фіолетовим сяйвом.',
+        },
+        {
+          imgUrl: 'myImage4',
+          discount: 29,
+          oldPrice: '23061',
+          newPrice: '16365 UAH',
+          title: 'Тур на Кіпр',
+          description: 'Вас вітає Кіпр, острів, що є батьківщиною богині кохання Афродіти. Тут з 365 днів на рік 300 – це сонячні дні! Пориньте в теплу та сонячну весну, відпочиваючи...',
+        },
+        {
+          imgUrl: 'myImage5',
+          discount: 50,
+          oldPrice: '16861',
+          newPrice: '8430 UAH',
+          title: 'Фестиваль тюльпанів в Стамбулі',
+          description: 'Запрошуємо вас насолодитися яскравими кольорами та ароматами на Фестивалі тюльпанів у Стамбулі, де цей чудовий квітковий захід...',
+        },
+        {
+          imgUrl: 'myImage6',
+          discount: 60,
+          oldPrice: '20292',
+          newPrice: '8100 UAH',
+          title: 'Римський вікенд',
+          description: 'Вирушайте в захоплюючу подорож до Риму на чудовий вікенд, де історія, культура та гастрономія зливаються в ідеальному поєднанні.',
+        }
+      ],
     }
   }
 };

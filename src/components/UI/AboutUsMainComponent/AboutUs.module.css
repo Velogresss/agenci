@@ -13,6 +13,13 @@
 
 .imageSection {
     margin-left: -15px;
+    width: 871px;
+    height: 853px;
+}
+
+.imageSection img {
+    width: 871px;
+    height: 853px;
 }
 
 .aboutUsImage {
@@ -62,7 +69,7 @@
     background-color: #e6b800;
 }
 
-@media (min-width: 901px) and (max-width: 1900px) {
+@media (min-width: 901px) and (max-width: 1600px) {
     .AboutUsContainerForAll {
         flex-direction: column;
     }

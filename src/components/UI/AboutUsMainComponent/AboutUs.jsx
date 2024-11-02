@@ -17,8 +17,8 @@ function AboutUs() {
             <div className={classes.AboutUsContainerForAll}>
                 <div className={classes.imageSection}>
                     <picture>
-                        <source srcSet={ImageAbout} media="(min-width: 1901px)" />
-                        <source srcSet={ImageAbout1024} media="(max-width: 900px) and (max-width: 1900px)" />
+                        <source srcSet={ImageAbout} media="(min-width: 1601px)" />
+                        <source srcSet={ImageAbout1024} media="(min-width: 900px) and (max-width: 1600px)" />
                         <source srcSet={ImageAbout} media="(max-width: 360px)" />
                         <img src={ImageAbout1024} alt={t('aboutUs.title')} className={classes.aboutUsImage} />
                     </picture>

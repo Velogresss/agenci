@@ -17,7 +17,7 @@ const Card = ({ image, title, description, isSelected, onClick }) => {
       <img src={image} alt={title} className={styles.image} />
       <div className={styles.content}>
         <h3>{title}</h3>
-        {isSelected && <p>{description}</p>}
+        {isSelected && isHovered && <p>{description}</p>}
       </div>
     </div>
   );

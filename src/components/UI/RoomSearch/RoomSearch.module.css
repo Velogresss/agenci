@@ -47,7 +47,7 @@ margin: 10px 0;
   background-color: #FCB50B;
 }
 
-@media (min-width: 800px) and (max-width: 1900px) {
+@media (min-width: 800px) and (max-width: 1600px) {
     .wrapper{
       width: 788px;
       height: 330px;

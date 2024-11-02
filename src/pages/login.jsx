@@ -1,31 +1,14 @@
-import React, { useContext } from 'react';
-import './login.css';
-import { AuthContext } from '../context/context';
+import React from 'react';
+import LoginComponent from './LoginComponent';
+import GetToken from '../components/UI/GetToken/GetToken'
 
-import Link from '../../src/components/UI/LinksFooter/LinksFooter'
-
-import GetTokenComponent from '../components/API/GetTokenComponent'
-
-const AuthButton = () => {
-  const { isAuthenticated, login, logout } = useContext(AuthContext);
-
-  const handleAuthToggle = () => {
-    if (isAuthenticated) {
-      logout();
-    } else {
-      login();
-    }
-  };
-
+function Login() {
   return (
-    // <button onClick={handleAuthToggle}>
-    //   {isAuthenticated ? 'Вийти' : 'Увійти'}
-    // </button>
     <div>
-      <GetTokenComponent onClick={handleAuthToggle}/>
-      <Link/>
+      <LoginComponent connection="http://localhost:5082" />
+      <GetToken/>
     </div>
   );
-};
+}
 
-export default AuthButton;
+export default Login;

@@ -31,7 +31,7 @@ body{
 }
 
 .CardListCont{
-    padding: 0 100px;
+    padding: 25px 100px;
 }
 
 @media (min-width: 1600px) and (max-width: 1900px) {

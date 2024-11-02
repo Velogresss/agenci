@@ -78,7 +78,7 @@
     border-radius: 13px;
   }  
 
-@media (min-width: 800px) and (max-width: 1900px) {  
+@media (min-width: 800px) and (max-width: 1600px) {  
   .container {
     width: 677px;
     height: 54px;

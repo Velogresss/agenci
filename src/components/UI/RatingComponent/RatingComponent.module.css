@@ -1,8 +1,9 @@
 .ratingContainer {
-    border: 1px solid #ccc;
+    border: 1px solid black;
     padding: 16px;
-    border-radius: 8px;
+    border-radius: 13px;
     width: 100%;
+    box-sizing: border-box;
   }
   
   .overallRating {
@@ -55,7 +56,6 @@
 
   .slider {
     height: 10px;
-    -webkit-appearance: none;
     margin: 10px 0;
     width: 80%;
     box-shadow: 0px 0px 0px #FFFFFF;

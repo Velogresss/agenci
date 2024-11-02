@@ -1,5 +1,5 @@
 .cardListContainer h1{
-  text-align: center;
+  text-align: start;
 }
 
 .cardList {
@@ -24,7 +24,7 @@
   z-index: 10; 
 }
 
-@media (min-width: 1145px) and (max-width: 1900px) {
+@media (min-width: 1145px) and (max-width: 1600px) {
   .cardList {
     overflow-y: hidden;
     display: grid;
