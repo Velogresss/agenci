@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import classes from './Navigation.module.css';
 import logoImage from '../../../img/logoImage.png';
@@ -61,7 +61,13 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <p onClick={logout}>{t('header.logout')}</p>
+                  <Link
+                      to="/all"
+                      className={isActive('/all')}
+                      onClick={logout}
+                    >
+                      <p className={classes.LinkP}>{t('header.logout')}</p>
+                    </Link>
                   </li>
                 </>
               ) : (
@@ -209,7 +215,13 @@ const Navigation = () => {
                     </Link>
                   </li>
                   <li>
-                    <p className={classes.LinkP} onClick={logout}>{t('header.logout')}</p>
+                  <Link
+                      to="/all"
+                      className={isActive('/all')}
+                      onClick={logout}
+                    >
+                      <p className={classes.LinkP}>{t('header.logout')}</p>
+                    </Link>
                   </li>
                 </>
               ) : (

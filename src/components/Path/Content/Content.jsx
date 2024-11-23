@@ -9,6 +9,8 @@ import Leisure from '../../../pages/leisure';
 import AviaTrails from '../../../pages/AviaTrails';
 import Accommodation from '../../../pages/accomodation';
 import ResidenceInfoPage from '../../../pages/ResidenceInfoPage';
+import PersonalPage from '../../../pages/PersonalPage';
+import CreditCardForm from '../../../pages/CreditCardForm'
 
 import Results from '../../../pages/Results'
 
@@ -29,8 +31,9 @@ const Content = () => {
       <Route path="/residence/:id" element={<ResidenceInfoPage/>} />
       <Route path="/results" element={<Results />} />
       <Route path="/residence-observe/:id" element={<ResidentObsPage />} />
-      {/* <Route path="/pay" element={<Pay />} /> */}
+      <Route path="/personal-page" element={<PersonalPage />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/payment" element={<CreditCardForm />} />
       <Route path="/contacts" element={<Contacts />} />
       <Route path="/flights" element={<AviaTrails />} />
       <Route path="/leisure" element={<Leisure />} />

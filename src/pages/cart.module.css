@@ -1,0 +1,63 @@
+.cartHotelConatinerAll{
+  margin: 50px;
+}
+
+.cartHotelConatiner{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 13px;
+  padding: 25px 50px;
+  margin-bottom: 50px;
+}
+
+.cartHotelConatinerInner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartHotelConatinerInner2{
+  margin-left: 15px;
+  width: 70%;
+}
+
+.cartHotelConatinerInnerImage{
+  height: 250px;
+  width: auto;
+  border-radius: 13px;
+}
+
+.cartHotelConatiner h1{
+  font-size: 48px;
+  margin: 0;
+}
+
+.cartHotelConatiner h2{
+  font-size: 36px;
+  margin: 15px 0;
+}
+
+.cartHotelConatiner p{
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.cartHotelConatiner span{
+  font-weight: 700;
+}
+
+.cartHotelConatinerButton{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.cartHotelConatinerButton button{
+  width: 282px;
+  height: 75px;
+  background-color: #FCB50B;
+  font-size: 32px;
+  font-weight: 300;
+  border: none;
+  border-radius: 13px;
+}

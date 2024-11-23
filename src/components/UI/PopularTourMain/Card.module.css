@@ -29,6 +29,9 @@
   opacity: 0;
   transition: opacity 1s ease;
   width: 90%;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39.06px;
 }
 
 .card.hovered .content,
@@ -47,6 +50,12 @@
   .card.selected:nth-child(4),
   .card.selected:nth-child(5) {
     order: -1;
+  }
+
+  .card .content {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 39.06px;
   }
 }
 
@@ -109,5 +118,11 @@
   .card.selected:nth-child(4),
   .card.selected:nth-child(5) {
     order: inherit;
+  }
+
+  .card .content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 39.06px;
   }
 }

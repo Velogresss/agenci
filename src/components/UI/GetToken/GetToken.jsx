@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const MyComponent = () => {
     const [response, setResponse] = useState(null);
@@ -28,12 +28,15 @@ const MyComponent = () => {
         }
     };
 
+    useEffect(() => {
+        handleFetch(); 
+    }, []);
+
     return (
         <div>
-            <button onClick={handleFetch}>Надіслати запит</button>
-
+            {/* <button onClick={handleFetch}>Надіслати запит</button>
             {response && <div>Відповідь: {JSON.stringify(response)}</div>}
-            {error && <div>Помилка: {error.message}</div>}
+            {error && <div>Помилка: {error.message}</div>} */}
         </div>
     );
 };

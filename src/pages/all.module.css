@@ -37,11 +37,11 @@ body{
 @media (min-width: 1600px) and (max-width: 1900px) {
 
     .PaginationOfferCardComponentC{
-        margin: 0 100px;
+        margin: 20px 100px;
     }
 
     .CardListCont{
-        padding: 0 100px;
+        padding: 25px 100px;
     }
 }
 

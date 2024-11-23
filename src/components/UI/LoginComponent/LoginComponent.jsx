@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
-import { AES } from '../AES/AES';
+import React, { useState, useContext } from 'react';
+import { AES } from '../../../AES/AES';
+import classes from './LoginComponent.module.css';
+import LinksFooter from '../LinksFooter/LinksFooter'
+
+import { AuthContext } from '../../../context/context';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = ({ connection }) => {
-  const [login, setLogin] = useState('');
+  const [Login, setLogin] = useState('');
   const [password, setPassword] = useState('');
+  const { isAuthenticated, login } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -11,7 +18,7 @@ const LoginPage = ({ connection }) => {
     const userAgent = navigator.userAgent;
     const data = {
       "data": {
-          "login": login,
+          "login": Login,
           "password": password
       },
       "user_agent": userAgent
@@ -39,6 +46,8 @@ const LoginPage = ({ connection }) => {
       const res = await response.json();
       if (res.meta.code === 200) {
         localStorage.setItem("user_data", JSON.stringify(res.data));
+        login();
+        navigate('/all');
       }
 
       return res;
@@ -48,23 +57,23 @@ const LoginPage = ({ connection }) => {
   };
 
   return (
-    <div>
-      <h2>Login Page</h2>
+    <div className={classes.LoginContainer}>
+      <h2>Вхід</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className={classes.labelContainer}>
           <label>
-            Login:
+            <span>Логін:</span>
             <input 
               type="text" 
-              value={login} 
+              value={Login} 
               onChange={(e) => setLogin(e.target.value)} 
               required 
             />
           </label>
         </div>
-        <div>
+        <div className={classes.labelContainer}>
           <label>
-            Password:
+            <span>Пароль:</span>
             <input 
               type="password" 
               value={password} 
@@ -73,7 +82,10 @@ const LoginPage = ({ connection }) => {
             />
           </label>
         </div>
-        <button type="submit">Submit</button>
+        <div className={classes.LinksFooterContainer}>
+          <LinksFooter/>
+        </div>
+        <button type="submit">Увійти</button>
       </form>
     </div>
   );

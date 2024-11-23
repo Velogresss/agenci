@@ -26,6 +26,16 @@ const HotelInfo = ({ data }) => {
     return <p>Дані не завантажено</p>;
   }
 
+  sessionStorage.setItem('startDate', roomSearchData.startDate);
+  sessionStorage.setItem('endDate', roomSearchData.endDate);
+  sessionStorage.setItem('daysBetween', daysBetween);
+  sessionStorage.setItem('img', residenceData.img);
+
+  sessionStorage.setItem('residenceName', residenceData.name);
+  sessionStorage.setItem('roomSearchDataA', roomSearchData.adults);
+  sessionStorage.setItem('roomSearchDataC', roomSearchData.childr);
+  sessionStorage.setItem('residenceDataBads', residenceData.bads);
+
   return (
     <div className={styles.container}>
       <div className={styles.container1}>

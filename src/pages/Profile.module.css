@@ -1,0 +1,106 @@
+.profileContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profileSection,
+  .securitySection,
+  .accountLinkingSection {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  h2 {
+    margin: 0 0 15px 0;
+    font-size: 48px;
+  }
+  
+  .profileInfo {
+    display: flex;
+    justify-content:space-between;
+  }
+  
+  .avatar {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+  }
+  
+  .avatarImg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .profileFields{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .profileFields p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .profileFields span{
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  .editBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .securityForm label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .updateBtn {
+    padding: 10px 15px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .accountLinking {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .linkBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
